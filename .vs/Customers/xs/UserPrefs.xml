@@ -1,15 +1,12 @@
 ﻿<Properties StartupConfiguration="{8C8EA39A-D9B4-42D2-B2CC-FDA0D31EBAB2}|Default">
   <MonoDevelop.Ide.ItemProperties.Customers.Api PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Customers.Api/Dockerfile">
-    <Files>
-      <File FileName="Customers.Api/Dockerfile" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Customers" expanded="True">
-            <Node name="Customers.Api" expanded="True" selected="True" />
-            <Node name="docker-compose" expanded="True" />
+            <Node name="Customers.Api" expanded="True" />
+            <Node name="docker-compose" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
