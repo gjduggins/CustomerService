@@ -1,22 +1,29 @@
-﻿<Properties StartupConfiguration="{1EAE5573-2103-4D98-986A-2D61253580B1}|Default">
+﻿<Properties StartupConfiguration="{D9AB581E-9495-45E6-8B64-BA4CCBB6AE32}|Default">
   <MonoDevelop.Ide.ItemProperties.Customers.Api PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Customers.Core/Customers.Core.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Customers.Api/Dockerfile">
     <Files>
-      <File FileName="Customers.Api/Customers.Api.csproj" Line="1" Column="1" />
-      <File FileName="Customers.Core/Customers.Core.csproj" Line="1" Column="1" />
+      <File FileName="Customers.Api/Customers.Api.csproj" Line="19" Column="1" />
+      <File FileName="Customers.Api/Dockerfile" Line="10" Column="20" />
+      <File FileName=".dockerignore" />
+      <File FileName="docker-compose.yml" />
+      <File FileName="docker-compose.override.yml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Customers" expanded="True">
-            <Node name="Customers.Api" expanded="True" selected="True" />
+          <Node name="Customers" expanded="True" selected="True">
+            <Node name="Customers.Api" expanded="True" />
+            <Node name="docker-compose" expanded="True">
+              <Node name="docker-compose.yml" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
