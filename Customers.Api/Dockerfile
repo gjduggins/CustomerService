@@ -15,6 +15,10 @@ COPY . .
 WORKDIR "/src/Customers.Api"
 RUN dotnet build "Customers.Api.csproj" -c Release -o /app/build
 
+WORKDIR "/src"
+RUN dotnet test "Customers.Api.Tests/Customers.Api.Tests.csproj" --logger "trx;LogFileName=CustomerApiTests.trx" 
+
+WORKDIR "/src/Customers.Api"
 FROM build AS publish
 RUN dotnet publish "Customers.Api.csproj" -c Release -o /app/publish
 

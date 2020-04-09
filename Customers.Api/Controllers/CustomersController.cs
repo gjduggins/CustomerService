@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Customers.Core.Entities;
+using Customers.Core.Interfaces;
 using Customers.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,18 +15,23 @@ namespace Customers.Api.Controllers
     [Route("[controller]")]
     public class CustomersController : Controller
     {
+        private readonly ICustomerRepository _customerRepository;
+
+        public CustomersController(ICustomerRepository customerRepository)
+        {
+            _customerRepository = customerRepository;
+        }
+
         [HttpGet]
         public IEnumerable<Customer> Get()
         {
-            var repo = new CustomerRepository();
-            return repo.Get();
+            return _customerRepository.Get();
         }
 
         [HttpGet("{id}")]
         public Customer Get(int id)
         {
-            var repo = new CustomerRepository();
-            return repo.Get(id);
+            return _customerRepository.Get(id);
         }
     }
 }
