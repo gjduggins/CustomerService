@@ -24,7 +24,7 @@ stages:
       inputs:
         command: test
         projects: 'Customers.Api.Tests/Customers.Api.Tests.csproj'
-        arguments: '--configuration $(buildConfiguration)'
+        arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 - stage: BuildImage
   displayName: Build image
   jobs:  
