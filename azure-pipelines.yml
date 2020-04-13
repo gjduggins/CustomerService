@@ -13,13 +13,21 @@ variables:
   buildConfiguration: 'Release'
 
 stages:
-- stage: Build
+- stage: BuildAndTest
   jobs:
   - job: Build
     displayName: Build
     steps:
     - script: dotnet build Customers.sln  --configuration $(buildConfiguration)
       displayName: 'dotnet build $(buildConfiguration)'
+  - job: Test
+    displayName: Test
+    steps:
+    - Task: DotNetCoreCLI@2
+      inputs:
+        command: test
+        projects: 'Customers.Api.Tests/Customers.Api.Tests.csproj'
+        arguments: '--configuration $(buildConfiguration)'
 - stage: BuildImage
   displayName: Build image
   jobs:  
