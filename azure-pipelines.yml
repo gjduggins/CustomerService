@@ -15,14 +15,11 @@ variables:
 stages:
 - stage: BuildAndTest
   jobs:
-  - job: Build
-    displayName: Build
+  - job: BuildAndTest
+    displayName: Build and Test
     steps:
     - script: dotnet build Customers.sln  --configuration $(buildConfiguration)
       displayName: 'dotnet build $(buildConfiguration)'
-  - job: Test
-    displayName: Test
-    steps:
     - task: DotNetCoreCLI@2
       inputs:
         command: test
