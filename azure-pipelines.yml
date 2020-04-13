@@ -23,7 +23,7 @@ stages:
   - job: Test
     displayName: Test
     steps:
-    - Task: DotNetCoreCLI@2
+    - task: DotNetCoreCLI@2
       inputs:
         command: test
         projects: 'Customers.Api.Tests/Customers.Api.Tests.csproj'
