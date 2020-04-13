@@ -15,7 +15,7 @@ variables:
 stages:
 - stage: Build
   jobs:
-  - jobs: Build
+  - job: Build
     displayName: Build
     steps:
     - script: dotnet build Customers.sln  --configuration $(buildConfiguration)
