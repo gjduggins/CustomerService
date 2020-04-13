@@ -3,14 +3,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Customers.Api/Dockerfile">
     <Files>
       <File FileName="Customers.Api/Customers.Api.csproj" Line="19" Column="1" />
-      <File FileName="Customers.Api/Dockerfile" Line="19" Column="108" />
-      <File FileName="docker-compose.yml" Line="1" Column="1" />
+      <File FileName="Customers.Api/Dockerfile" Line="19" Column="37" />
+      <File FileName="docker-compose.yml" />
       <File FileName="docker-compose.override.yml" />
-      <File FileName="Customers.Api/Program.cs" Line="1" Column="1" />
-      <File FileName="Customers.Api/Startup.cs" Line="33" Column="1" />
-      <File FileName="Customers.Api/Controllers/CustomersController.cs" Line="30" Column="1" />
-      <File FileName="Customers.Api.Tests/UnitTest1.cs" Line="33" Column="10" />
-      <File FileName="Customers.Core/Interfaces/ICustomerRepository.cs" Line="1" Column="1" />
+      <File FileName="Customers.Api/Program.cs" />
+      <File FileName="Customers.Api/Startup.cs" />
+      <File FileName="Customers.Api/Controllers/CustomersController.cs" />
+      <File FileName="Customers.Core/Interfaces/ICustomerRepository.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -32,15 +31,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Customers" expanded="True">
-            <Node name="Customers.Api.Tests" expanded="True">
-              <Node name="Customers.Api.Tests" expanded="True">
-                <Node name="CustomersControllerTests" expanded="True">
-                  <Node name="GetCustomerByIdReturnsCustomer" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Customers" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
