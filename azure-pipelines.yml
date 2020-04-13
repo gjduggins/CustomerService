@@ -10,9 +10,17 @@ resources:
 
 variables:
   tag: '$(Build.BuildId)'
+  buildConfiguration: 'Release'
 
 stages:
 - stage: Build
+  jobs:
+  - jobs: Build
+    displayName: Build
+    steps:
+    - script: dotnet build Customers.sln  --configuration $(buildConfiguration)
+      displayName: 'dotnet build $(buildConfiguration)'
+- stage: BuildImage
   displayName: Build image
   jobs:  
   - job: Build
@@ -20,8 +28,6 @@ stages:
     pool:
       vmImage: 'ubuntu-latest'
     steps:
-    - script: dotnet build Customers.sln --configuration $(buildConfiguration)
-      displayName: 'dotnet build $(buildConfiguration)'
     - task: Docker@2
       displayName: Build an image
       inputs:
